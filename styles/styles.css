@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 800px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+header{
+
+    display: flex;
+    justify-content: space-between;
+
+}
+#logo {
+    width: 150px;
+    height: auto;
+    
+}
+
+nav {
+    width: 690px;
+    height: 50px;
+    line-height: 50px;
+    /* background-color: cadetblue; */
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;     
+}
+
+nav a {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.856);
+}
+
+nav a:hover {
+    text-decoration: line-through;
+}
+
+h1, h2, p{
+    text-align: center;
+}
+
+h1 {
+    padding-top: 70px;
+    font-size: 35px;
+    margin-right: 200px;
+}
+
+span {
+    color: red;
+}
+
+
+
+#parrafo_intro {
+    margin-top: 5px;
+    text-align: left;
+    margin-left: 165px;
+}
+
+#world {
+    color: black;
+    text-decoration: line-through;
+}
+
+.button_intro {
+    background-color: #de2610;
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    /* padding: 20px; */
+    margin-top: 25px; 
+    margin-bottom: 50px;
+    margin-left: 200px; 
+    border-radius: 20px;
+    cursor: pointer;
+    border: 0;
+}
+
+.button_intro a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+.button_intro:hover {
+
+    background: rgb(199,7,7);
+    background: linear-gradient(90deg, rgba(199,7,7,1) 0%, rgba(1,0,255,1) 100%);
+}
+
+#h2_episodios {
+    color: black;
+    /* margin-top: 100px; */
+    margin-bottom: 70px;
+    margin-left: 80px;
+    text-align: left;
+    position: relative;
+    bottom: 220px;
+    color: white;
+}
+
+.reposo-diagonal {
+    position: relative;
+    height: 30vw;
+    overflow: hidden;
+    width: inherit;
+}
+
+.efecto-diagonal {
+    position: absolute;
+    width: 100vw;
+    height: 30vw;
+    background-color: #0000FF;
+    transform-origin: top right;
+    transform: skewY(-6deg);
+}
+
+#efecto-diagonal {
+    transform-origin: top left;
+    background-color: #0000A3;
+}
+
+#container_episodios {
+    width: 100%;
+    height: 900px;
+    background-image: linear-gradient(180deg, #0000FF 0%, #0000A3 100%);
+}
+
+#flex_container_episodios {
+   display: flex;
+   flex-flow: column;  
+}
+
+#flex_container_episodios > div {
+    width: 1000px;
+    height: auto;
+    position: relative;
+    left: 150px;
+    bottom: 260px;
+    margin-top: 20px;
+}
+
+.reposo-diagonal_2 {
+    position: relative;
+    height: 30vw;
+    overflow: hidden;
+    width: inherit;
+}
+.efecto-diagonal_2 {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    background-color: #0000A3;
+    transform-origin: bottom left;
+    transform: skewY(-6deg);
+}
+#efecto-diagonal_2 {
+    transform-origin: top left;
+    background-color: #0000A3;
+}
+
+#quienes_somos {
+    width: 100%;
+    height: 200px;
+}
+#phone {
+    width: 400px;
+    position: relative;
+    bottom: 300px;
+    left: 100px;
+}
+
+#container_quienes_somos {
+    width: 550px;
+    height: auto;
+    margin: auto;
+    /* background-color: wheat; */
+    position: relative;
+    bottom: 600px;
+    left: 100px;
+    font-size: 20px;
+}
+
+#container_quienes_somos p {
+
+    padding-top: 20px;
+}
+
+#h2_invitados_estelares, #h2_nuestros_temas {
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 150px;
+    font-size: 28px;
+}
+
+#invitados_estelares {
+    width: 100%;
+    height: auto;
+}
+
+#container_invitados_estelares {
+    width: 100%;
+    height: auto;   
+}
+
+#container_invitados_estelares img {
+    width: 400px;
+    height: 250px;
+    max-width: 100%;
+    margin: 10px
+}
+
+#container_invitados_estelares img:hover {
+    opacity: 0.7;
+    box-shadow: 0, 4px, 2px, 0.5;
+}
+
+#contaimer_algunos_de_nuestros_temas {
+    width: 100%;
+    height: auto;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#contaimer_algunos_de_nuestros_temas img {
+    width: 200px;
+    max-width: 100%;   
+}
+
+#contaimer_algunos_de_nuestros_temas h3 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+#h2_nuestros_temas {
+    padding: 20px;
+}
+
+#h2_novedades {
+    position: relative;
+    bottom: 200px;
+    color: white;
+    font-size: 30px;
+}
+
+#button_episodios {
+    background-color: #de2610;
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 0;
+    position: relative;
+    bottom: 140px;
+    left: 480px;
+}
+
+
+#button_episodios a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+#button_episodios:hover {
+
+    background: rgb(255,0,0);
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(245,245,245,0.45281862745098034) 100%);
+}
+
+#button_escucha_los_episodios {
+    background-color: #de2610;
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 0;
+    position: relative;
+    bottom: 140px;
+    left: 480px;
+}
+
+#button_escucha_los_episodios a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+#button_escucha_los_episodios:hover {
+
+    background: rgb(255,0,0);
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(245,245,245,0.45281862745098034) 100%);
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+#flex_container_footer {
+    width: 400px;
+    height: auto;
+    /* background-color: yellowgreen; */
+    margin-bottom: 15px;
+    /* margin-left: 20px; */
+}
+
+.icons_footer {
+    width: 30px;
+    height: 30px;
+}
+
